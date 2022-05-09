@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150vh;
+    width: 90vw;
+    background: url(img/Espaço1.png);
+    background-size: cover;
+}
+
+.globe{
+    position: relative;
+    left: 130px;
+    width: 380px;
+    top: 190px;
+    height: 380px;
+    border-radius: 50%;
+    background-image: url(img/Mapa1.png);
+    background-size: cover;
+    box-shadow: 25px -25px 25px black inset, 10px 10px 30px white inset, 5px 0px 20px rgb(47, 47, 245);
+    animation: rotate 100s linear infinite;
+}
+
+.lua{
+    width: 105px;
+    height: 105px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background: url(img/lua.png);
+    position: relative;
+    right: 290px;
+    top: 93px;
+    box-shadow: 5px -15px 15px black inset, 5px 5px 15px gray inset, 5px 0px 20px white;
+    animation: girar 2000s linear infinite;   
+}
+
+.Mercurio{
+    position: relative;
+    left: 138px;
+    width: 160px;
+    top: -23px;
+    height: 160px;
+    border-radius: 50%;
+    background-image: url(img/Mercúrio1.png);
+    background-size: cover;
+    box-shadow: 25px -20px 25px black inset, 10px 10px 30px white inset, 5px 0px 20px rgb(255, 187, 60);
+    animation: circulo 100s linear infinite;
+}
+
+.Venus{
+    position: relative;
+    left: 179px;
+    width: 333px;
+    top: 138px;
+    height: 333px;
+    border-radius: 50%;
+    background-image: url(img/Venus1.png);
+    background-size: cover;
+    box-shadow: 25px -20px 25px black inset, 10px 10px 30px white inset, 5px 0px 20px rgb(199, 129, 0);
+    animation: rodar 100s linear infinite;
+}
+
+.Marte{
+    position: relative;
+    left: -940px;
+    width: 117px;
+    top: -125px;
+    height: 117px;
+    border-radius: 50%;
+    background-image: url(img/Marte1.png);
+    background-size: cover;
+    box-shadow: 25px -20px 25px black inset, 10px 10px 30px white inset, 5px 0px 20px rgb(255, 130, 130);
+    animation: volta 50s linear infinite;
+}
+
+@keyframes rotate{
+    to{background-position: 100%;}
+}
+
+@keyframes girar{
+    to{background-position: 100%;}
+}
+
+@keyframes circulo{
+    to{background-position: 100%;}
+}
+
+@keyframes rodar{
+    to{background-position: 100%;}
+}
+
+@keyframes volta{
+    to{background-position: 100%;}
+}
